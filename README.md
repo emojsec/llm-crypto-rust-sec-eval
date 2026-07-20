@@ -1,26 +1,26 @@
 # llm-crypto-rust-sec-eval
-- **Owner**: emojsec [github](https://github.com/rustsec/advisory-db)
-- **Name**: llm-crypto-rust-sec-eval [github](https://github.com/rustsec/advisory-db)
-- **Default branch**: main [github](https://github.com/rustsec/advisory-db)
-- **Visibility**: Public [github](https://github.com/rustsec/advisory-db)
-- **Recent commits**: “Initial commit of local project” to folders like `analysis`, `generated_code`, `pipeline_output`, `presentation`, `projects`, `prompts`, and `report`. [github](https://github.com/rustsec/advisory-db)
+- **Owner**: emojsec
+- **Name**: llm-crypto-rust-sec-eval 
+- **Default branch**: main 
+- **Visibility**: Public 
+- **Recent commits**: “Initial commit of local project” to folders like `analysis`, `generated_code`, `pipeline_output`, `presentation`, `projects`, `prompts`, and `report`.
 - **Languages (approximate)**:
-  - Python ~41.6% [github](https://github.com/rustsec/advisory-db)
-  - Rust ~39.5% [github](https://github.com/rustsec/advisory-db)
-  - Rich Text Format ~18.9% [github](https://github.com/rustsec/advisory-db)
+  - Python ~41.6% 
+  - Rust ~39.5%
+  - Rich Text Format ~18.9% 
 
 ## Repository structure (high-level folders)
 
-From the top-level tree: [github](https://github.com/rustsec/advisory-db)
+From the top-level tree: 
 
-- `analysis` – summaries and evaluation outputs (e.g., compilation results, manual review). [github](https://github.com/rustsec/advisory-db)
-- `generated_code` – raw LLM-generated Rust code samples. [github](https://github.com/rustsec/advisory-db)
-- `pipeline_output` – outputs from the repair/build/CodeQL pipeline (logs, reports, CSVs). [github](https://github.com/rustsec/advisory-db)
-- `presentation` – slide deck or related assets for the project presentation. [github](https://github.com/rustsec/advisory-db)
-- `projects` – project-specific configuration or code for experiments. [github](https://github.com/rustsec/advisory-db)
-- `prompts` – prompt definitions used to query CodeLlama, GPT5, etc. [github](https://github.com/rustsec/advisory-db)
-- `report` – written report artifacts (Word/Markdown, tables). [github](https://github.com/rustsec/advisory-db)
-- Root files: `.gitignore`, `README.md`, `.DS_Store`. [github](https://github.com/rustsec/advisory-db)
+- `analysis` – summaries and evaluation outputs (e.g., compilation results, manual review).
+- `generated_code` – raw LLM-generated Rust code samples. 
+- `pipeline_output` – outputs from the repair/build/CodeQL pipeline (logs, reports, CSVs). 
+- `presentation` – slide deck or related assets for the project presentation.
+- `projects` – project-specific configuration or code for experiments. 
+- `prompts` – prompt definitions used to query CodeLlama, GPT5, etc.
+- `report` – written report artifacts (Word/Markdown, tables).
+- Root files: `.gitignore`, `README.md`, `.DS_Store`.
 
 ## Repository topics
 
