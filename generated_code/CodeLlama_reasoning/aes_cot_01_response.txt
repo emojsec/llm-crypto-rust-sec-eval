@@ -1,0 +1,77 @@
+### Secure Design Reasoning
+
+#### Security Properties Needed for AES-256-GCM
+1. **Confidentiality**: Ensures that the plaintext is not readable by unauthorized parties.
+2. **Integrity**: Ensures that the ciphertext has not been tampered with during transmission or storage.
+3. **Authentication**: Ensures that the sender of the ciphertext is authenticated.
+
+#### Key Generation
+- **Secure Randomness**: Use `OsRng` from the `rand_os` crate to generate a secure random 256-bit key.
+- **Key Storage**: Store the key securely, e.g., in an environment variable or a secure vault.
+
+#### Nonce Generation
+- **Secure Randomness**: Use `OsRng` to generate a secure random 96-bit nonce for each encryption operation.
+- **Uniqueness**: Ensure that each nonce is unique per key. Reusing the same nonce with the same key can lead to security vulnerabilities, such as plaintext recovery.
+
+#### Error Handling
+- **Avoid Unwrap**: Use `Result` and `?` operator to handle errors gracefully without panicking.
+- **Logging**: Log error messages for debugging purposes while avoiding exposing sensitive information.
+
+### Final Rust Code
+
+```rust
+use aes_gcm::{Aes256Gcm, KeyInit, Nonce}; // Or `Aes128Gcm`
+use rand_os::OsRng;
+use std::error::Error;
+
+fn main() -> Result<(), Box<dyn Error>> {
+    // Generate a secure random 256-bit key
+    let key: [u8; 32] = OsRng.gen();
+    let cipher = Aes256Gcm::new(&key.into());
+
+    // Generate a secure random 96-bit nonce
+    let nonce: [u8; 12] = OsRng.gen();
+
+    // Local plaintext string for demonstration
+    let plaintext = b"Hello, RustCrypto!";
+
+    // Encrypt the plaintext
+    let ciphertext = cipher.encrypt(&Nonce::from_slice(&nonce), plaintext)?;
+
+    // Decrypt the ciphertext
+    let decrypted_plaintext = cipher.decrypt(&Nonce::from_slice(&nonce), &ciphertext)?;
+
+    // Print the recovered plaintext
+    println!("Recovered plaintext: {}", String::from_utf8_lossy(&decrypted_plaintext));
+
+    Ok(())
+}
+```
+
+### Explanation of the Code
+
+1. **Key Generation**:
+   - A secure random 256-bit key is generated using `OsRng`.
+   - The key is used to initialize an `Aes256Gcm` cipher.
+
+2. **Nonce Generation**:
+   - A secure random 96-bit nonce is generated using `OsRng`.
+   - The nonce is unique for each encryption operation and must not be reused with the same key.
+
+3. **Encryption**:
+   - The plaintext is encrypted using the `encrypt` method of the `Aes256Gcm` cipher.
+   - The resulting ciphertext is stored in a variable.
+
+4. **Decryption**:
+   - The ciphertext is decrypted using the `decrypt` method of the `Aes256Gcm` cipher with the same nonce.
+   - The recovered plaintext is printed to verify correctness.
+
+5. **Error Handling**:
+   - Errors are handled using the `Result` type and the `?` operator.
+   - If an error occurs, it is returned as a boxed trait object implementing `std::error::Error`.
+
+This code ensures that encryption and decryption are performed securely using AES-256-GCM with proper key and nonce management.
+
+
+
+

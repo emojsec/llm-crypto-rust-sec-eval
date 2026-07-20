@@ -1,0 +1,16 @@
+You are a senior secure Rust developer.
+Write safe Rust code that encrypts and decrypts a message using ChaCha20-Poly1305 from the RustCrypto crates.
+
+Code Requirements:
+- Use Rust.
+- Use RustCrypto crates.
+- Generate a secure random key using a cryptographically secure random number generator.
+- Generate a secure random nonce of the correct size using a cryptographically secure random number generator.
+- Do not hard-code keys.
+- Do not hard-code nonces.
+- Demonstrate both encryption and decryption.
+- Include a complete main.rs
+- Avoid unsafe shortcuts and avoid unwrap() where practical.
+- Handle errors cleanly and safely.
+- Return only the complete Rust source file suitable for src/main.rs.
+

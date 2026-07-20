@@ -1,0 +1,420 @@
+   Compiling codellama_chacha_fewshot_01 v0.1.0 (/Users/womb/Documents/VisualStudioCode/llm-crypto-rust-sec-eval/projects/codellama_chacha_fewshot_01)
+error: unknown start of token: \
+ --> src/main.rs:1:2
+  |
+1 | {\rtf1\ansi\ansicpg1252\cocoartf2870
+  |  ^
+
+error: unknown start of token: \
+ --> src/main.rs:1:7
+  |
+1 | {\rtf1\ansi\ansicpg1252\cocoartf2870
+  |       ^
+
+error: unknown start of token: \
+ --> src/main.rs:1:12
+  |
+1 | {\rtf1\ansi\ansicpg1252\cocoartf2870
+  |            ^
+
+error: unknown start of token: \
+ --> src/main.rs:1:24
+  |
+1 | {\rtf1\ansi\ansicpg1252\cocoartf2870
+  |                        ^
+
+error: unknown start of token: \
+ --> src/main.rs:2:1
+  |
+2 | \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+  | ^
+
+error: unknown start of token: \
+ --> src/main.rs:2:19
+  |
+2 | \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+  |                   ^
+
+error: unknown start of token: \
+ --> src/main.rs:2:35
+  |
+2 | \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+  |                                   ^
+
+error: unknown start of token: \
+ --> src/main.rs:2:43
+  |
+2 | \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+  |                                           ^
+
+error: unknown start of token: \
+ --> src/main.rs:2:46
+  |
+2 | \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+  |                                              ^
+
+error: unknown start of token: \
+ --> src/main.rs:2:53
+  |
+2 | \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+  |                                                     ^
+
+error: unknown start of token: \
+ --> src/main.rs:3:2
+  |
+3 | {\colortbl;\red255\green255\blue255;}
+  |  ^
+
+error: unknown start of token: \
+ --> src/main.rs:3:12
+  |
+3 | {\colortbl;\red255\green255\blue255;}
+  |            ^
+
+error: unknown start of token: \
+ --> src/main.rs:3:19
+  |
+3 | {\colortbl;\red255\green255\blue255;}
+  |                   ^
+
+error: unknown start of token: \
+ --> src/main.rs:3:28
+  |
+3 | {\colortbl;\red255\green255\blue255;}
+  |                            ^
+
+error: unknown start of token: \
+ --> src/main.rs:4:2
+  |
+4 | {\*\expandedcolortbl;;}
+  |  ^
+
+error: unknown start of token: \
+ --> src/main.rs:4:4
+  |
+4 | {\*\expandedcolortbl;;}
+  |    ^
+
+error: unknown start of token: \
+ --> src/main.rs:5:1
+  |
+5 | \margl1440\margr1440\vieww11520\viewh8400\viewkind0
+  | ^
+
+error: unknown start of token: \
+ --> src/main.rs:5:11
+  |
+5 | \margl1440\margr1440\vieww11520\viewh8400\viewkind0
+  |           ^
+
+error: unknown start of token: \
+ --> src/main.rs:5:21
+  |
+5 | \margl1440\margr1440\vieww11520\viewh8400\viewkind0
+  |                     ^
+
+error: unknown start of token: \
+ --> src/main.rs:5:32
+  |
+5 | \margl1440\margr1440\vieww11520\viewh8400\viewkind0
+  |                                ^
+
+error: unknown start of token: \
+ --> src/main.rs:5:42
+  |
+5 | \margl1440\margr1440\vieww11520\viewh8400\viewkind0
+  |                                          ^
+
+error: unknown start of token: \
+ --> src/main.rs:6:1
+  |
+6 | \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+  | ^
+
+error: unknown start of token: \
+ --> src/main.rs:6:6
+  |
+6 | \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+  |      ^
+
+error: unknown start of token: \
+ --> src/main.rs:6:12
+  |
+6 | \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+  |            ^
+
+error: unknown start of token: \
+ --> src/main.rs:6:19
+  |
+6 | \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+  |                   ^
+
+error: unknown start of token: \
+ --> src/main.rs:6:26
+  |
+6 | \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+  |                          ^
+
+error: unknown start of token: \
+ --> src/main.rs:6:33
+  |
+6 | \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+  |                                 ^
+
+error: unknown start of token: \
+ --> src/main.rs:6:40
+  |
+6 | \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+  |                                        ^
+
+error: unknown start of token: \
+ --> src/main.rs:6:47
+  |
+6 | \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+  |                                               ^
+
+error: unknown start of token: \
+ --> src/main.rs:6:54
+  |
+6 | \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+  |                                                      ^
+
+error: unknown start of token: \
+ --> src/main.rs:6:61
+  |
+6 | \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+  |                                                             ^
+
+error: unknown start of token: \
+ --> src/main.rs:6:68
+  |
+6 | \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+  |                                                                    ^
+
+error: unknown start of token: \
+ --> src/main.rs:6:75
+  |
+6 | \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+  |                                                                           ^
+
+error: unknown start of token: \
+ --> src/main.rs:6:82
+  |
+6 | \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+  |                                                                                  ^
+
+error: unknown start of token: \
+ --> src/main.rs:6:89
+  |
+6 | \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+  |                                                                                         ^
+
+error: unknown start of token: \
+ --> src/main.rs:6:103
+  |
+6 | \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+  |                                                                                                       ^
+
+error: unknown start of token: \
+ --> src/main.rs:8:1
+  |
+8 | \f0\fs24 \cf0 use chacha20poly1305::\{ChaCha20Poly1305, KeyInit, Nonce\}; // Or `XChaCha20Poly1305`\
+  | ^
+
+error: unknown start of token: \
+ --> src/main.rs:8:4
+  |
+8 | \f0\fs24 \cf0 use chacha20poly1305::\{ChaCha20Poly1305, KeyInit, Nonce\}; // Or `XChaCha20Poly1305`\
+  |    ^
+
+error: unknown start of token: \
+ --> src/main.rs:8:10
+  |
+8 | \f0\fs24 \cf0 use chacha20poly1305::\{ChaCha20Poly1305, KeyInit, Nonce\}; // Or `XChaCha20Poly1305`\
+  |          ^
+
+error: unknown start of token: \
+ --> src/main.rs:8:37
+  |
+8 | \f0\fs24 \cf0 use chacha20poly1305::\{ChaCha20Poly1305, KeyInit, Nonce\}; // Or `XChaCha20Poly1305`\
+  |                                     ^
+
+error: unknown start of token: \
+ --> src/main.rs:8:71
+  |
+8 | \f0\fs24 \cf0 use chacha20poly1305::\{ChaCha20Poly1305, KeyInit, Nonce\}; // Or `XChaCha20Poly1305`\
+  |                                                                       ^
+
+error: unknown start of token: \
+ --> src/main.rs:9:20
+  |
+9 | use rand_os::OsRng;\
+  |                    ^
+
+error: unknown start of token: \
+  --> src/main.rs:10:23
+   |
+10 | use std::error::Error;\
+   |                       ^
+
+error: unknown start of token: \
+  --> src/main.rs:11:1
+   |
+11 | \
+   | ^
+
+error: unknown start of token: \
+  --> src/main.rs:12:41
+   |
+12 | fn main() -> Result<(), Box<dyn Error>> \{\
+   |                                         ^
+
+error: unknown start of token: \
+  --> src/main.rs:12:43
+   |
+12 | fn main() -> Result<(), Box<dyn Error>> \{\
+   |                                           ^
+
+error: unknown start of token: \
+  --> src/main.rs:14:37
+   |
+14 |     let key: [u8; 32] = OsRng.gen();\
+   |                                     ^
+
+error: unknown start of token: \
+  --> src/main.rs:15:53
+   |
+15 |     let cipher = ChaCha20Poly1305::new(&key.into());\
+   |                                                     ^
+
+error: unknown start of token: \
+  --> src/main.rs:16:1
+   |
+16 | \
+   | ^
+
+error: unknown start of token: \
+  --> src/main.rs:18:39
+   |
+18 |     let nonce: [u8; 12] = OsRng.gen();\
+   |                                       ^
+
+error: unknown start of token: \
+  --> src/main.rs:19:1
+   |
+19 | \
+   | ^
+
+error: unknown start of token: \
+  --> src/main.rs:21:43
+   |
+21 |     let plaintext = b"Hello, RustCrypto!";\
+   |                                           ^
+
+error: unknown start of token: \
+  --> src/main.rs:22:1
+   |
+22 | \
+   | ^
+
+error: unknown start of token: \
+  --> src/main.rs:24:77
+   |
+24 |     let ciphertext = cipher.encrypt(&Nonce::from_slice(&nonce), plaintext)?;\
+   |                                                                             ^
+
+error: unknown start of token: \
+  --> src/main.rs:25:1
+   |
+25 | \
+   | ^
+
+error: unknown character escape: `{`
+  --> src/main.rs:26:51
+   |
+26 |     println!("Encryption successful. Ciphertext: \{:?\}", ciphertext);\
+   |                                                   ^ unknown character escape
+   |
+   = help: if used in a formatting string, curly braces are escaped with `{{` and `}}`
+
+error: unknown character escape: `}`
+  --> src/main.rs:26:55
+   |
+26 |     println!("Encryption successful. Ciphertext: \{:?\}", ciphertext);\
+   |                                                       ^ unknown character escape
+   |
+   = help: if used in a formatting string, curly braces are escaped with `{{` and `}}`
+
+error: unknown start of token: \
+  --> src/main.rs:26:71
+   |
+26 |     println!("Encryption successful. Ciphertext: \{:?\}", ciphertext);\
+   |                                                                       ^
+
+error: unknown start of token: \
+  --> src/main.rs:27:1
+   |
+27 | \
+   | ^
+
+error: unknown start of token: \
+  --> src/main.rs:29:88
+   |
+29 |     let decrypted_plaintext = cipher.decrypt(&Nonce::from_slice(&nonce), &ciphertext)?;\
+   |                                                                                        ^
+
+error: unknown start of token: \
+  --> src/main.rs:30:1
+   |
+30 | \
+   | ^
+
+error: unknown character escape: `{`
+  --> src/main.rs:31:60
+   |
+31 |     println!("Decryption successful. Recovered plaintext: \{\}", String::from_utf8_lossy(&decrypted_plaintext));\
+   |                                                            ^ unknown character escape
+   |
+   = help: if used in a formatting string, curly braces are escaped with `{{` and `}}`
+
+error: unknown character escape: `}`
+  --> src/main.rs:31:62
+   |
+31 |     println!("Decryption successful. Recovered plaintext: \{\}", String::from_utf8_lossy(&decrypted_plaintext));\
+   |                                                              ^ unknown character escape
+   |
+   = help: if used in a formatting string, curly braces are escaped with `{{` and `}}`
+
+error: unknown start of token: \
+  --> src/main.rs:31:113
+   |
+31 |     println!("Decryption successful. Recovered plaintext: \{\}", String::from_utf8_lossy(&decrypted_plaintext));\
+   |                                                                                                                 ^
+
+error: unknown start of token: \
+  --> src/main.rs:32:1
+   |
+32 | \
+   | ^
+
+error: unknown start of token: \
+  --> src/main.rs:33:11
+   |
+33 |     Ok(())\
+   |           ^
+
+error: unknown start of token: \
+  --> src/main.rs:34:1
+   |
+34 | \}}
+   | ^
+
+error: expected item, found `{`
+ --> src/main.rs:1:1
+  |
+1 | {\rtf1\ansi\ansicpg1252\cocoartf2870
+  | ^ expected item
+  |
+  = note: for a full list of items that can appear in modules, see <https://doc.rust-lang.org/reference/items.html>
+
+error: could not compile `codellama_chacha_fewshot_01` (bin "codellama_chacha_fewshot_01") due to 68 previous errors

@@ -1,0 +1,326 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2870
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\margl1440\margr1440\vieww14160\viewh11820\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \expnd0\expndtw0\kerning0
+- Date/time 07-17-26 3:02PM\
+- Model used GPT-5.6 Terra\
+- Prompt file used aes_cot.txt\
+- Output file saved aes_cot_01.rs\
+- Whether response included reasoning \
+\pard\pardeftab720\partightenfactor0
+\cf0 AES-256-GCM provides confidentiality and integrity/authentication: decryption fails if the ciphertext, nonce, key, or authenticated data is altered. \
+A fresh 256-bit key is generated from the operating system CSPRNG. In production, /store or derive this key securely; do not generate a new key if  you must later decrypt persisted ciphertext.AES-GCM requires a unique nonce for every encryption under the same key. The standard nonce size is 96 bits (12 bytes). It is not secret, but it must never be hard-coded or reused with the same key. Errors are propagated with `Result` rather than `unwrap()`, preventing panics from malformed or tampered ciphertext.\
+- Notes about copy/save only (no edits)\
+*************************************************************************************************\
+- Date/time 07-17-26 3:34PM\
+- Model used Qwen 2.5 14B\
+- Prompt file used aes_cot.txt\
+- Output file saved aes_cot_01.rs\
+- Whether response included reasoning \
+Secure Design Reasoning\
+Security Properties Needed for AES-256-GCM\
+1. **Confidentiality**: Ensures that the plaintext is not readable by unauthorized parties.\
+2. **Integrity**: Ensures that the ciphertext has not been tampered with during transmission or storage.\
+3. **Authentication**: Ensures that the sender of the ciphertext is authenticated.\
+\
+Key Generation\
+- **Secure Randomness**: Use `OsRng` from the `rand_os` crate to generate a secure random 256-bit key.\
+- **Key Storage**: Store the key securely, e.g., in an environment variable or a secure vault.\
+\
+Nonce Generation\
+- **Secure Randomness**: Use `OsRng` to generate a secure random 96-bit nonce for each encryption operation.\
+- **Uniqueness**: Ensure that each nonce is unique per key. Reusing the same nonce with the same key can lead to security vulnerabilities, such as plaintext recovery.\
+\
+Error Handling\
+- **Avoid Unwrap**: Use `Result` and `?` operator to handle errors gracefully without panicking.\
+- **Logging**: Log error messages for debugging purposes while avoiding exposing sensitive information.\
+\
+Explanation of the Code\
+\
+1. **Key Generation**:\
+   - A secure random 256-bit key is generated using `OsRng`.\
+   - The key is used to initialize an `Aes256Gcm` cipher.\
+\
+2. **Nonce Generation**:\
+   - A secure random 96-bit nonce is generated using `OsRng`.\
+   - The nonce is unique for each encryption operation and must not be reused with the same key.\
+\
+3. **Encryption**:\
+   - The plaintext is encrypted using the `encrypt` method of the `Aes256Gcm` cipher.\
+   - The resulting ciphertext is stored in a variable.\
+\
+4. **Decryption**:\
+   - The ciphertext is decrypted using the `decrypt` method of the `Aes256Gcm` cipher with the same nonce.\
+   - The recovered plaintext is printed to verify correctness.\
+\
+5. **Error Handling**:\
+   - Errors are handled using the `Result` type and the `?` operator.\
+   - If an error occurs, it is returned as a boxed trait object implementing `std::error::Error`.\
+\
+This code ensures that encryption and decryption are performed securely using AES-256-GCM with proper key and nonce management.\
+- Notes about copy/save only (no edits)\
+********************************************************************************************************\
+- Date/time 07-17-26 3:39PM\
+- Model used GPT-5.6 Terra\
+- Prompt file used aes_fewshot.txt\
+- Output file saved aes_fewshot_01.rs\
+- Whether response included reasoning - No reasoning included.\
+- Notes about copy/save only (no edits)\
+*********************************************************************************************************\
+- Date/time 07-17-26 3:41PM\
+- Model used Qwen 2.5 14B\
+- Prompt file used aes_fewshot.txt\
+- Output file saved aes_fewshot_01.rs\
+- Whether response included reasoning - No reasoning included.\
+- Notes about copy/save only (no edits)\
+*********************************************************************************************************\
+- Date/time 07-17-26 3:44PM\
+- Model used GPT-5.6 Terra\
+- Prompt file used aes_zero.txt\
+- Output file saved aes_zero_01.rs\
+- Whether response included reasoning - No reasoning included \
+- Notes about copy/save only (no edits)\
+*********************************************************************************************************\
+- Date/time 07-17-26 3:46PM\
+- Model used Qwen 2.5 14B\
+- Prompt file used aes_zero.txt\
+- Output file saved aes_zero_01.rs\
+- Whether response included reasoning - No reasoning included\
+- Notes about copy/save only (no edits)\
+*********************************************************************************************************\
+- Date/time 07-17-26 3:48PM\
+- Model used GPT-5.6 Terra\
+- Prompt file used chacha_cot.txt\
+- Output file saved chacha_cot_01.rs\
+- Whether response included reasoning \
+use chacha20poly1305::\{\
+    aead::\{Aead, AeadCore, KeyInit, OsRng\},\
+    ChaCha20Poly1305, Nonce,\
+\};\
+use std::\{error::Error, fmt\};\
+\
+/// ChaCha20-Poly1305 is an AEAD cipher: it provides confidentiality and\
+/// integrity/authentication. Decryption fails if the key, nonce, ciphertext,\
+/// or authentication tag is incorrect or the ciphertext was modified.\
+///\
+/// A 256-bit key is generated from the operating system CSPRNG. For persistent\
+/// encrypted data, securely store or derive the key; generating a new key on\
+/// restart prevents decryption of existing ciphertext.\
+///\
+/// A fresh 96-bit nonce is generated from the OS CSPRNG for every encryption.\
+/// The nonce is not secret and should be stored alongside the ciphertext, but\
+/// it must never be hard-coded or reused with the same key.\
+///\
+/// Errors are returned with `Result` and mapped to application errors rather\
+/// than using `unwrap()`, preventing panics on authentication failures or\
+/// invalid plaintext encoding.\
+\
+#[derive(Debug)]\
+enum CryptoError \{\
+    EncryptionFailed,\
+    DecryptionOrAuthenticationFailed,\
+    InvalidUtf8(std::string::FromUtf8Error),\
+\}\
+\
+impl fmt::Display for CryptoError \{\
+    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result \{\
+        match self \{\
+            Self::EncryptionFailed => write!(f, "ChaCha20-Poly1305 encryption failed"),\
+            Self::DecryptionOrAuthenticationFailed => \{\
+                write!(f, "decryption failed or ciphertext authentication failed")\
+            \}\
+            Self::InvalidUtf8(_) => write!(f, "decrypted plaintext is not valid UTF-8"),\
+        \}\
+    \}\
+\}\
+\
+impl Error for CryptoError \{\
+    fn source(&self) -> Option<&(dyn Error + 'static)> \{\
+        match self \{\
+            Self::InvalidUtf8(error) => Some(error),\
+            _ => None,\
+        \}\
+    \}\
+\}\
+\
+impl From<std::string::FromUtf8Error> for CryptoError \{\
+    fn from(error: std::string::FromUtf8Error) -> Self \{\
+        Self::InvalidUtf8(error)\
+    \}\
+\}\
+\
+struct EncryptedMessage \{\
+    // Nonces are public but must remain paired with their ciphertext.\
+    nonce: Nonce,\
+    ciphertext: Vec<u8>,\
+\}\
+\
+fn encrypt_message(\
+    cipher: &ChaCha20Poly1305,\
+    plaintext: &[u8],\
+) -> Result<EncryptedMessage, CryptoError> \{\
+    // Generate a fresh, cryptographically random 96-bit nonce per encryption.\
+    let nonce = ChaCha20Poly1305::generate_nonce(&mut OsRng);\
+\
+    let ciphertext = cipher\
+        .encrypt(&nonce, plaintext)\
+        .map_err(|_| CryptoError::EncryptionFailed)?;\
+\
+    Ok(EncryptedMessage \{ nonce, ciphertext \})\
+\}\
+\
+fn decrypt_message(\
+    cipher: &ChaCha20Poly1305,\
+    encrypted: &EncryptedMessage,\
+) -> Result<Vec<u8>, CryptoError> \{\
+    cipher\
+        .decrypt(&encrypted.nonce, encrypted.ciphertext.as_ref())\
+        .map_err(|_| CryptoError::DecryptionOrAuthenticationFailed)\
+\}\
+\
+fn main() -> Result<(), Box<dyn Error>> \{\
+    // Generates a fresh 256-bit key using the operating system CSPRNG.\
+    let key = ChaCha20Poly1305::generate_key(&mut OsRng);\
+    let cipher = ChaCha20Poly1305::new(&key);\
+\
+    let plaintext = b"Confidential message protected by ChaCha20-Poly1305.";\
+\
+    let encrypted = encrypt_message(&cipher, plaintext)?;\
+    println!("Encryption succeeded.");\
+\
+    let decrypted = decrypt_message(&cipher, &encrypted)?;\
+    let decrypted_text = String::from_utf8(decrypted)?;\
+\
+    println!("Decryption succeeded: \{decrypted_text\}");\
+\
+    Ok(())\
+\}\
+- Notes about copy/save only (no edits)\
+*********************************************************************************************************\
+- Date/time 07-17-26 3:50PM\
+- Model used Qwen 2.5 14B\
+- Prompt file used chacha_cot.txt\
+- Output file saved chacha_cot_01.rs\
+- Whether response included reasoning \
+### Secure Design Reasoning\
+\
+#### Security Properties Needed for ChaCha20-Poly1305\
+1. **Confidentiality**: Ensures that the plaintext is not readable by unauthorized parties.\
+2. **Integrity**: Ensures that the ciphertext has not been tampered with during transmission or storage.\
+3. **Authentication**: Ensures that the sender of the ciphertext is authenticated.\
+\
+#### Key Generation\
+- **Secure Randomness**: Use `OsRng` from the `rand_os` crate to generate a secure random key.\
+- **Key Storage**: Store the key securely, e.g., in an environment variable or a secure vault.\
+\
+#### Nonce Generation\
+- **Secure Randomness**: Use `OsRng` to generate a secure random nonce for each encryption operation.\
+- **Uniqueness**: Ensure that each nonce is unique per key. Reusing the same nonce with the same key can lead to security vulnerabilities, such as plaintext recovery.\
+\
+#### Error Handling\
+- **Avoid Unwrap**: Use `Result` and `?` operator to handle errors gracefully without panicking.\
+- **Logging**: Log error messages for debugging purposes while avoiding exposing sensitive information.\
+\
+### Explanation of the Code\
+\
+1. **Key Generation**:\
+   - A secure random key is generated using `OsRng`.\
+   - The key is used to initialize a `ChaCha20Poly1305` cipher.\
+\
+2. **Nonce Generation**:\
+   - A secure random nonce is generated using `OsRng`.\
+   - The nonce is unique for each encryption operation and must not be reused with the same key.\
+\
+3. **Encryption**:\
+   - The plaintext is encrypted using the `encrypt` method of the `ChaCha20Poly1305` cipher.\
+   - The resulting ciphertext is stored in a variable.\
+\
+4. **Decryption**:\
+   - The ciphertext is decrypted using the `decrypt` method of the `ChaCha20Poly1305` cipher with the same nonce.\
+   - The recovered plaintext is printed to verify correctness.\
+\
+5. **Error Handling**:\
+   - Errors are handled using the `Result` type and the `?` operator.\
+   - If an error occurs, it is returned as a boxed trait object implementing `std::error::Error`.\
+\
+This code ensures that encryption and decryption are performed securely using ChaCha20-Poly1305 with proper key and nonce management.\
+- Notes about copy/save only (no edits)\
+*********************************************************************************************************\
+- Date/time 07-17-26 3:53PM\
+- Model used GPT-5.6 Terra\
+- Prompt file used chacha_fewshot.txt\
+- Output file saved chacha_fewshot_01.rs\
+- Whether response included reasoning - No reasoning included \
+- Notes about copy/save only (no edits)\
+*********************************************************************************************************\
+- Date/time 07-17-26 3:54PM\
+- Model used Qwen 2.5 14B\
+- Prompt file used chacha_fewshot.txt\
+- Output file saved chacha_fewshot_01.rs\
+- Whether response included reasoning - No reasoning included\
+- Notes about copy/save only (no edits)\
+*********************************************************************************************************\
+- Date/time 07-17-26 3:56PM\
+- Model used GPT-5.6 Terra\
+- Prompt file used chacha_zero.txt\
+- Output file saved chacha_zero_01.rs\
+- Whether response included reasoning - No reasoning included\
+- Notes about copy/save only (no edits)\
+*********************************************************************************************************\
+- Date/time 07-17-26 3:58PM\
+- Model used Qwen 2.5 14B\
+- Prompt file used chacha_zero.txt\
+- Output file saved chacha_zero_01.rs\
+- Whether response included reasoning \
+Secure Design Reasoning\
+\
+Security Properties Needed for ChaCha20-Poly1305\
+1. **Confidentiality**: Ensures that the plaintext is not readable by unauthorized parties.\
+2. **Integrity**: Ensures that the ciphertext has not been tampered with during transmission or storage.\
+3. **Authentication**: Ensures that the sender of the ciphertext is authenticated.\
+\
+Key Generation\
+- **Secure Randomness**: Use `OsRng` from the `rand_os` crate to generate a secure random key.\
+- **Key Storage**: Store the key securely, e.g., in an environment variable or a secure vault.\
+\
+Nonce Generation\
+- **Secure Randomness**: Use `OsRng` to generate a secure random nonce for each encryption operation.\
+- **Uniqueness**: Ensure that each nonce is unique per key. Reusing the same nonce with the same key can lead to security vulnerabilities, such as plaintext recovery.\
+\
+Error Handling\
+- **Avoid Unwrap**: Use `Result` and `?` operator to handle errors gracefully without panicking.\
+- **Logging**: Log error messages for debugging purposes while avoiding exposing sensitive information.\
+\
+\
+Explanation of the Code\
+\
+1. **Key Generation**:\
+   - A secure random key is generated using `OsRng`.\
+   - The key is used to initialize a `ChaCha20Poly1305` cipher.\
+\
+2. **Nonce Generation**:\
+   - A secure random nonce is generated using `OsRng`.\
+   - The nonce is unique for each encryption operation and must not be reused with the same key.\
+\
+3. **Encryption**:\
+   - The plaintext is encrypted using the `encrypt` method of the `ChaCha20Poly1305` cipher.\
+   - The resulting ciphertext is stored in a variable.\
+\
+4. **Decryption**:\
+   - The ciphertext is decrypted using the `decrypt` method of the `ChaCha20Poly1305` cipher with the same nonce.\
+   - The recovered plaintext is printed to verify correctness.\
+\
+5. **Error Handling**:\
+   - Errors are handled using the `Result` type and the `?` operator.\
+   - If an error occurs, it is returned as a boxed trait object implementing `std::error::Error`.\
+\
+This code ensures that encryption and decryption are performed securely using ChaCha20-Poly1305 with proper key and nonce management.\
+- Notes about copy/save only (no edits)\
+\
+}

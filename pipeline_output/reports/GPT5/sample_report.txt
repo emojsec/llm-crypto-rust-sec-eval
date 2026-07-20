@@ -1,0 +1,32 @@
+Sample report for GPT5
+================================================================================
+
+Methodology notes
+- as_generated_compiles refers to the original sample before any repair.
+- repaired_compiles refers to the repaired copy after pipeline repair steps.
+- Manual findings below are heuristic triage only, not definitive vulnerability confirmation.
+
+Build and repair summary
+- original_path: generated_code/GPT5
+- repaired_path: pipeline_output/projects_repaired/GPT5
+- original_build_attempted: no
+- as_generated_compiles: no
+- repaired_compiles: no
+- initial_compile_category: missing_project_structure
+- repaired_compile_category: type_mismatch
+- repair_actions: created_cargo_toml:pipeline_output/projects_repaired/GPT5/Cargo.toml|copied_main_rs:pipeline_output/projects_repaired/GPT5/aes_cot_01.rs=>pipeline_output/projects_repaired/GPT5/src/main.rs
+- initial_compile_log_path: pipeline_output/reports/GPT5/initial_build.log
+- repaired_compile_log_path: pipeline_output/reports/GPT5/repaired_build.log
+- repair_log_path: pipeline_output/reports/GPT5/repair.log
+
+CodeQL
+- attempted: no
+- succeeded: no
+- codeql_db_path: 
+- codeql_create_log_path: 
+- codeql_analyze_log_path: 
+- sarif_path: 
+- codeql_findings_count: 0
+
+Manual review findings (heuristic triage only)
+- manual_findings_count: 0

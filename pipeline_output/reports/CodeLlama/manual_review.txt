@@ -1,0 +1,80 @@
+Manual Security Review Report (Heuristic Triage Only)
+Sample ID: CodeLlama
+
+Important note:
+- This stage is heuristic triage only.
+- Findings are candidate signals for analyst follow-up, not definitive vulnerability confirmation.
+- Treat security_relevant=no findings as contextual weak signals unless corroborated by deeper review.
+
+[MF-0001] hardcoded_nonce severity=medium security_relevant=yes
+file: pipeline_output/projects_repaired/CodeLlama/aes_fewshot_01.rs:18
+code: let nonce: [u8; 12] = OsRng.gen();\
+rationale: Literal or constant nonce material detected; fixed nonces can break AEAD security when reused.
+note: Heuristic triage only; confirm actual runtime reuse and cipher context before treating as a vulnerability.
+
+[MF-0002] hardcoded_nonce severity=medium security_relevant=yes
+file: pipeline_output/projects_repaired/CodeLlama/aes_fewshot_01.rs:18
+code: let nonce: [u8; 12] = OsRng.gen();\
+rationale: Literal or constant nonce material detected; fixed nonces can break AEAD security when reused.
+note: Heuristic triage only; confirm actual runtime reuse and cipher context before treating as a vulnerability.
+
+[MF-0003] hardcoded_nonce severity=medium security_relevant=yes
+file: pipeline_output/projects_repaired/CodeLlama/aes_zero_01.rs:18
+code: let nonce: [u8; 12] = OsRng.gen();\
+rationale: Literal or constant nonce material detected; fixed nonces can break AEAD security when reused.
+note: Heuristic triage only; confirm actual runtime reuse and cipher context before treating as a vulnerability.
+
+[MF-0004] hardcoded_nonce severity=medium security_relevant=yes
+file: pipeline_output/projects_repaired/CodeLlama/aes_zero_01.rs:18
+code: let nonce: [u8; 12] = OsRng.gen();\
+rationale: Literal or constant nonce material detected; fixed nonces can break AEAD security when reused.
+note: Heuristic triage only; confirm actual runtime reuse and cipher context before treating as a vulnerability.
+
+[MF-0005] hardcoded_nonce severity=medium security_relevant=yes
+file: pipeline_output/projects_repaired/CodeLlama/chacha_cot_01.rs:18
+code: let nonce: [u8; 12] = OsRng.gen();\
+rationale: Literal or constant nonce material detected; fixed nonces can break AEAD security when reused.
+note: Heuristic triage only; confirm actual runtime reuse and cipher context before treating as a vulnerability.
+
+[MF-0006] hardcoded_nonce severity=medium security_relevant=yes
+file: pipeline_output/projects_repaired/CodeLlama/chacha_cot_01.rs:18
+code: let nonce: [u8; 12] = OsRng.gen();\
+rationale: Literal or constant nonce material detected; fixed nonces can break AEAD security when reused.
+note: Heuristic triage only; confirm actual runtime reuse and cipher context before treating as a vulnerability.
+
+[MF-0007] hardcoded_nonce severity=medium security_relevant=yes
+file: pipeline_output/projects_repaired/CodeLlama/chacha_fewshot_01.rs:18
+code: let nonce: [u8; 12] = OsRng.gen();\
+rationale: Literal or constant nonce material detected; fixed nonces can break AEAD security when reused.
+note: Heuristic triage only; confirm actual runtime reuse and cipher context before treating as a vulnerability.
+
+[MF-0008] hardcoded_nonce severity=medium security_relevant=yes
+file: pipeline_output/projects_repaired/CodeLlama/chacha_fewshot_01.rs:18
+code: let nonce: [u8; 12] = OsRng.gen();\
+rationale: Literal or constant nonce material detected; fixed nonces can break AEAD security when reused.
+note: Heuristic triage only; confirm actual runtime reuse and cipher context before treating as a vulnerability.
+
+[MF-0009] hardcoded_nonce severity=medium security_relevant=yes
+file: pipeline_output/projects_repaired/CodeLlama/chacha_zero_01.rs:18
+code: let nonce: [u8; 12] = OsRng.gen();\
+rationale: Literal or constant nonce material detected; fixed nonces can break AEAD security when reused.
+note: Heuristic triage only; confirm actual runtime reuse and cipher context before treating as a vulnerability.
+
+[MF-0010] hardcoded_nonce severity=medium security_relevant=yes
+file: pipeline_output/projects_repaired/CodeLlama/chacha_zero_01.rs:18
+code: let nonce: [u8; 12] = OsRng.gen();\
+rationale: Literal or constant nonce material detected; fixed nonces can break AEAD security when reused.
+note: Heuristic triage only; confirm actual runtime reuse and cipher context before treating as a vulnerability.
+
+[MF-0011] hardcoded_nonce severity=medium security_relevant=yes
+file: pipeline_output/projects_repaired/CodeLlama/src/main.rs:18
+code: let nonce: [u8; 12] = OsRng.gen();\
+rationale: Literal or constant nonce material detected; fixed nonces can break AEAD security when reused.
+note: Heuristic triage only; confirm actual runtime reuse and cipher context before treating as a vulnerability.
+
+[MF-0012] hardcoded_nonce severity=medium security_relevant=yes
+file: pipeline_output/projects_repaired/CodeLlama/src/main.rs:18
+code: let nonce: [u8; 12] = OsRng.gen();\
+rationale: Literal or constant nonce material detected; fixed nonces can break AEAD security when reused.
+note: Heuristic triage only; confirm actual runtime reuse and cipher context before treating as a vulnerability.
+

@@ -1,0 +1,44 @@
+Sample report for CodeLlama
+================================================================================
+
+Methodology notes
+- as_generated_compiles refers to the original sample before any repair.
+- repaired_compiles refers to the repaired copy after pipeline repair steps.
+- Manual findings below are heuristic triage only, not definitive vulnerability confirmation.
+
+Build and repair summary
+- original_path: generated_code/CodeLlama
+- repaired_path: pipeline_output/projects_repaired/CodeLlama
+- original_build_attempted: no
+- as_generated_compiles: no
+- repaired_compiles: no
+- initial_compile_category: missing_project_structure
+- repaired_compile_category: type_mismatch
+- repair_actions: created_cargo_toml:pipeline_output/projects_repaired/CodeLlama/Cargo.toml|copied_main_rs:pipeline_output/projects_repaired/CodeLlama/aes_fewshot_01.rs=>pipeline_output/projects_repaired/CodeLlama/src/main.rs
+- initial_compile_log_path: pipeline_output/reports/CodeLlama/initial_build.log
+- repaired_compile_log_path: pipeline_output/reports/CodeLlama/repaired_build.log
+- repair_log_path: pipeline_output/reports/CodeLlama/repair.log
+
+CodeQL
+- attempted: no
+- succeeded: no
+- codeql_db_path: 
+- codeql_create_log_path: 
+- codeql_analyze_log_path: 
+- sarif_path: 
+- codeql_findings_count: 0
+
+Manual review findings (heuristic triage only)
+- manual_findings_count: 12
+- [MF-0001] hardcoded_nonce severity=medium security_relevant=yes path=pipeline_output/projects_repaired/CodeLlama/aes_fewshot_01.rs:18 note=Heuristic triage only; confirm actual runtime reuse and cipher context before treating as a vulnerability.
+- [MF-0002] hardcoded_nonce severity=medium security_relevant=yes path=pipeline_output/projects_repaired/CodeLlama/aes_fewshot_01.rs:18 note=Heuristic triage only; confirm actual runtime reuse and cipher context before treating as a vulnerability.
+- [MF-0003] hardcoded_nonce severity=medium security_relevant=yes path=pipeline_output/projects_repaired/CodeLlama/aes_zero_01.rs:18 note=Heuristic triage only; confirm actual runtime reuse and cipher context before treating as a vulnerability.
+- [MF-0004] hardcoded_nonce severity=medium security_relevant=yes path=pipeline_output/projects_repaired/CodeLlama/aes_zero_01.rs:18 note=Heuristic triage only; confirm actual runtime reuse and cipher context before treating as a vulnerability.
+- [MF-0005] hardcoded_nonce severity=medium security_relevant=yes path=pipeline_output/projects_repaired/CodeLlama/chacha_cot_01.rs:18 note=Heuristic triage only; confirm actual runtime reuse and cipher context before treating as a vulnerability.
+- [MF-0006] hardcoded_nonce severity=medium security_relevant=yes path=pipeline_output/projects_repaired/CodeLlama/chacha_cot_01.rs:18 note=Heuristic triage only; confirm actual runtime reuse and cipher context before treating as a vulnerability.
+- [MF-0007] hardcoded_nonce severity=medium security_relevant=yes path=pipeline_output/projects_repaired/CodeLlama/chacha_fewshot_01.rs:18 note=Heuristic triage only; confirm actual runtime reuse and cipher context before treating as a vulnerability.
+- [MF-0008] hardcoded_nonce severity=medium security_relevant=yes path=pipeline_output/projects_repaired/CodeLlama/chacha_fewshot_01.rs:18 note=Heuristic triage only; confirm actual runtime reuse and cipher context before treating as a vulnerability.
+- [MF-0009] hardcoded_nonce severity=medium security_relevant=yes path=pipeline_output/projects_repaired/CodeLlama/chacha_zero_01.rs:18 note=Heuristic triage only; confirm actual runtime reuse and cipher context before treating as a vulnerability.
+- [MF-0010] hardcoded_nonce severity=medium security_relevant=yes path=pipeline_output/projects_repaired/CodeLlama/chacha_zero_01.rs:18 note=Heuristic triage only; confirm actual runtime reuse and cipher context before treating as a vulnerability.
+- [MF-0011] hardcoded_nonce severity=medium security_relevant=yes path=pipeline_output/projects_repaired/CodeLlama/src/main.rs:18 note=Heuristic triage only; confirm actual runtime reuse and cipher context before treating as a vulnerability.
+- [MF-0012] hardcoded_nonce severity=medium security_relevant=yes path=pipeline_output/projects_repaired/CodeLlama/src/main.rs:18 note=Heuristic triage only; confirm actual runtime reuse and cipher context before treating as a vulnerability.

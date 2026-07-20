@@ -1,0 +1,9 @@
+Manual Security Review Report (Heuristic Triage Only)
+Sample ID: .DS_Store
+
+Important note:
+- This stage is heuristic triage only.
+- Findings are candidate signals for analyst follow-up, not definitive vulnerability confirmation.
+- Treat security_relevant=no findings as contextual weak signals unless corroborated by deeper review.
+
+No heuristic manual findings detected.

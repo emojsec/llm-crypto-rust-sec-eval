@@ -1,0 +1,100 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2870
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 use aes_gcm::\{\
+    aead::\{Aead, AeadCore, KeyInit, OsRng\},\
+    Aes256Gcm, Key, Nonce,\
+\};\
+use std::\{error::Error, fmt\};\
+\
+/// AES-256-GCM provides confidentiality and integrity/authentication:\
+/// decryption fails if the ciphertext, nonce, key, or authenticated data is altered.\
+///\
+/// A fresh 256-bit key is generated from the operating system CSPRNG. In production,\
+/// store or derive this key securely; do not generate a new key if you must later\
+/// decrypt persisted ciphertext.\
+///\
+/// AES-GCM requires a unique nonce for every encryption under the same key. The\
+/// standard nonce size is 96 bits (12 bytes). It is not secret, but it must never\
+/// be hard-coded or reused with the same key.\
+///\
+/// Errors are propagated with `Result` rather than `unwrap()`, preventing panics\
+/// from malformed or tampered ciphertext.\
+\
+#[derive(Debug)]\
+enum CryptoError \{\
+    Encrypt,\
+    Decrypt,\
+    Utf8(std::string::FromUtf8Error),\
+\}\
+\
+impl fmt::Display for CryptoError \{\
+    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result \{\
+        match self \{\
+            Self::Encrypt => write!(f, "encryption failed"),\
+            Self::Decrypt => write!(f, "decryption failed or authentication failed"),\
+            Self::Utf8(_) => write!(f, "decrypted data was not valid UTF-8"),\
+        \}\
+    \}\
+\}\
+\
+impl Error for CryptoError \{\
+    fn source(&self) -> Option<&(dyn Error + 'static)> \{\
+        match self \{\
+            Self::Utf8(error) => Some(error),\
+            _ => None,\
+        \}\
+    \}\
+\}\
+\
+impl From<std::string::FromUtf8Error> for CryptoError \{\
+    fn from(error: std::string::FromUtf8Error) -> Self \{\
+        Self::Utf8(error)\
+    \}\
+\}\
+\
+struct EncryptedMessage \{\
+    nonce: Nonce<Aes256Gcm>,\
+    ciphertext: Vec<u8>,\
+\}\
+\
+fn encrypt_message(\
+    cipher: &Aes256Gcm,\
+    plaintext: &[u8],\
+) -> Result<EncryptedMessage, CryptoError> \{\
+    let nonce = Aes256Gcm::generate_nonce(&mut OsRng);\
+\
+    let ciphertext = cipher\
+        .encrypt(&nonce, plaintext)\
+        .map_err(|_| CryptoError::Encrypt)?;\
+\
+    Ok(EncryptedMessage \{ nonce, ciphertext \})\
+\}\
+\
+fn decrypt_message(\
+    cipher: &Aes256Gcm,\
+    encrypted: &EncryptedMessage,\
+) -> Result<Vec<u8>, CryptoError> \{\
+    cipher\
+        .decrypt(&encrypted.nonce, encrypted.ciphertext.as_ref())\
+        .map_err(|_| CryptoError::Decrypt)\
+\}\
+\
+fn main() -> Result<(), Box<dyn Error>> \{\
+    let key = Aes256Gcm::generate_key(&mut OsRng);\
+    let cipher = Aes256Gcm::new(&key);\
+\
+    let message = b"Confidential message protected with AES-256-GCM.";\
+\
+    let encrypted = encrypt_message(&cipher, message)?;\
+    let decrypted = decrypt_message(&cipher, &encrypted)?;\
+    let decrypted_text = String::from_utf8(decrypted)?;\
+\
+    println!("Decrypted message: \{decrypted_text\}");\
+\
+    Ok(())\
+\}}

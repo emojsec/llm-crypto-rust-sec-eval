@@ -1,0 +1,974 @@
+   Compiling gpt5_chacha_zero_1 v0.1.0 (/Users/womb/Documents/VisualStudioCode/llm-crypto-rust-sec-eval/projects/gpt5_chacha_zero_1)
+error: unknown start of token: \
+ --> src/main.rs:1:2
+  |
+1 | {\rtf1\ansi\ansicpg1252\cocoartf2870
+  |  ^
+
+error: unknown start of token: \
+ --> src/main.rs:1:7
+  |
+1 | {\rtf1\ansi\ansicpg1252\cocoartf2870
+  |       ^
+
+error: unknown start of token: \
+ --> src/main.rs:1:12
+  |
+1 | {\rtf1\ansi\ansicpg1252\cocoartf2870
+  |            ^
+
+error: unknown start of token: \
+ --> src/main.rs:1:24
+  |
+1 | {\rtf1\ansi\ansicpg1252\cocoartf2870
+  |                        ^
+
+error: unknown start of token: \
+ --> src/main.rs:2:1
+  |
+2 | \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+  | ^
+
+error: unknown start of token: \
+ --> src/main.rs:2:19
+  |
+2 | \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+  |                   ^
+
+error: unknown start of token: \
+ --> src/main.rs:2:35
+  |
+2 | \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+  |                                   ^
+
+error: unknown start of token: \
+ --> src/main.rs:2:43
+  |
+2 | \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+  |                                           ^
+
+error: unknown start of token: \
+ --> src/main.rs:2:46
+  |
+2 | \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+  |                                              ^
+
+error: unknown start of token: \
+ --> src/main.rs:2:53
+  |
+2 | \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+  |                                                     ^
+
+error: unknown start of token: \
+ --> src/main.rs:3:2
+  |
+3 | {\colortbl;\red255\green255\blue255;}
+  |  ^
+
+error: unknown start of token: \
+ --> src/main.rs:3:12
+  |
+3 | {\colortbl;\red255\green255\blue255;}
+  |            ^
+
+error: unknown start of token: \
+ --> src/main.rs:3:19
+  |
+3 | {\colortbl;\red255\green255\blue255;}
+  |                   ^
+
+error: unknown start of token: \
+ --> src/main.rs:3:28
+  |
+3 | {\colortbl;\red255\green255\blue255;}
+  |                            ^
+
+error: unknown start of token: \
+ --> src/main.rs:4:2
+  |
+4 | {\*\expandedcolortbl;;}
+  |  ^
+
+error: unknown start of token: \
+ --> src/main.rs:4:4
+  |
+4 | {\*\expandedcolortbl;;}
+  |    ^
+
+error: unknown start of token: \
+ --> src/main.rs:5:1
+  |
+5 | \margl1440\margr1440\vieww11520\viewh8400\viewkind0
+  | ^
+
+error: unknown start of token: \
+ --> src/main.rs:5:11
+  |
+5 | \margl1440\margr1440\vieww11520\viewh8400\viewkind0
+  |           ^
+
+error: unknown start of token: \
+ --> src/main.rs:5:21
+  |
+5 | \margl1440\margr1440\vieww11520\viewh8400\viewkind0
+  |                     ^
+
+error: unknown start of token: \
+ --> src/main.rs:5:32
+  |
+5 | \margl1440\margr1440\vieww11520\viewh8400\viewkind0
+  |                                ^
+
+error: unknown start of token: \
+ --> src/main.rs:5:42
+  |
+5 | \margl1440\margr1440\vieww11520\viewh8400\viewkind0
+  |                                          ^
+
+error: unknown start of token: \
+ --> src/main.rs:6:1
+  |
+6 | \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+  | ^
+
+error: unknown start of token: \
+ --> src/main.rs:6:6
+  |
+6 | \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+  |      ^
+
+error: unknown start of token: \
+ --> src/main.rs:6:12
+  |
+6 | \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+  |            ^
+
+error: unknown start of token: \
+ --> src/main.rs:6:19
+  |
+6 | \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+  |                   ^
+
+error: unknown start of token: \
+ --> src/main.rs:6:26
+  |
+6 | \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+  |                          ^
+
+error: unknown start of token: \
+ --> src/main.rs:6:33
+  |
+6 | \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+  |                                 ^
+
+error: unknown start of token: \
+ --> src/main.rs:6:40
+  |
+6 | \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+  |                                        ^
+
+error: unknown start of token: \
+ --> src/main.rs:6:47
+  |
+6 | \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+  |                                               ^
+
+error: unknown start of token: \
+ --> src/main.rs:6:54
+  |
+6 | \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+  |                                                      ^
+
+error: unknown start of token: \
+ --> src/main.rs:6:61
+  |
+6 | \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+  |                                                             ^
+
+error: unknown start of token: \
+ --> src/main.rs:6:68
+  |
+6 | \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+  |                                                                    ^
+
+error: unknown start of token: \
+ --> src/main.rs:6:75
+  |
+6 | \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+  |                                                                           ^
+
+error: unknown start of token: \
+ --> src/main.rs:6:82
+  |
+6 | \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+  |                                                                                  ^
+
+error: unknown start of token: \
+ --> src/main.rs:6:89
+  |
+6 | \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+  |                                                                                         ^
+
+error: unknown start of token: \
+ --> src/main.rs:6:103
+  |
+6 | \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+  |                                                                                                       ^
+
+error: unknown start of token: \
+ --> src/main.rs:8:1
+  |
+8 | \f0\fs24 \cf0 use chacha20poly1305::\{\
+  | ^
+
+error: unknown start of token: \
+ --> src/main.rs:8:4
+  |
+8 | \f0\fs24 \cf0 use chacha20poly1305::\{\
+  |    ^
+
+error: unknown start of token: \
+ --> src/main.rs:8:10
+  |
+8 | \f0\fs24 \cf0 use chacha20poly1305::\{\
+  |          ^
+
+error: unknown start of token: \
+ --> src/main.rs:8:37
+  |
+8 | \f0\fs24 \cf0 use chacha20poly1305::\{\
+  |                                     ^
+
+error: unknown start of token: \
+ --> src/main.rs:8:39
+  |
+8 | \f0\fs24 \cf0 use chacha20poly1305::\{\
+  |                                       ^
+
+error: unknown start of token: \
+ --> src/main.rs:9:11
+  |
+9 |     aead::\{Aead, AeadCore, KeyInit, OsRng\},\
+  |           ^
+
+error: unknown start of token: \
+ --> src/main.rs:9:43
+  |
+9 |     aead::\{Aead, AeadCore, KeyInit, OsRng\},\
+  |                                           ^
+
+error: unknown start of token: \
+ --> src/main.rs:9:46
+  |
+9 |     aead::\{Aead, AeadCore, KeyInit, OsRng\},\
+  |                                              ^
+
+error: unknown start of token: \
+  --> src/main.rs:10:29
+   |
+10 |     ChaCha20Poly1305, Nonce,\
+   |                             ^
+
+error: unknown start of token: \
+  --> src/main.rs:11:1
+   |
+11 | \};\
+   | ^
+
+error: unknown start of token: \
+  --> src/main.rs:11:4
+   |
+11 | \};\
+   |    ^
+
+error: unknown start of token: \
+  --> src/main.rs:12:10
+   |
+12 | use std::\{error::Error, fmt\};\
+   |          ^
+
+error: unknown start of token: \
+  --> src/main.rs:12:29
+   |
+12 | use std::\{error::Error, fmt\};\
+   |                             ^
+
+error: unknown start of token: \
+  --> src/main.rs:12:32
+   |
+12 | use std::\{error::Error, fmt\};\
+   |                                ^
+
+error: unknown start of token: \
+  --> src/main.rs:13:1
+   |
+13 | \
+   | ^
+
+error: unknown start of token: \
+  --> src/main.rs:28:1
+   |
+28 | \
+   | ^
+
+error: unknown start of token: \
+  --> src/main.rs:29:17
+   |
+29 | #[derive(Debug)]\
+   |                 ^
+
+error: unknown start of token: \
+  --> src/main.rs:30:18
+   |
+30 | enum CryptoError \{\
+   |                  ^
+
+error: unknown start of token: \
+  --> src/main.rs:30:20
+   |
+30 | enum CryptoError \{\
+   |                    ^
+
+error: unknown start of token: \
+  --> src/main.rs:31:22
+   |
+31 |     EncryptionFailed,\
+   |                      ^
+
+error: unknown start of token: \
+  --> src/main.rs:32:38
+   |
+32 |     DecryptionOrAuthenticationFailed,\
+   |                                      ^
+
+error: unknown start of token: \
+  --> src/main.rs:33:45
+   |
+33 |     InvalidUtf8(std::string::FromUtf8Error),\
+   |                                             ^
+
+error: unknown start of token: \
+  --> src/main.rs:34:1
+   |
+34 | \}\
+   | ^
+
+error: unknown start of token: \
+  --> src/main.rs:34:3
+   |
+34 | \}\
+   |   ^
+
+error: unknown start of token: \
+  --> src/main.rs:35:1
+   |
+35 | \
+   | ^
+
+error: unknown start of token: \
+  --> src/main.rs:36:35
+   |
+36 | impl fmt::Display for CryptoError \{\
+   |                                   ^
+
+error: unknown start of token: \
+  --> src/main.rs:36:37
+   |
+36 | impl fmt::Display for CryptoError \{\
+   |                                     ^
+
+error: unknown start of token: \
+  --> src/main.rs:37:62
+   |
+37 |     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result \{\
+   |                                                              ^
+
+error: unknown start of token: \
+  --> src/main.rs:37:64
+   |
+37 |     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result \{\
+   |                                                                ^
+
+error: unknown start of token: \
+  --> src/main.rs:38:20
+   |
+38 |         match self \{\
+   |                    ^
+
+error: unknown start of token: \
+  --> src/main.rs:38:22
+   |
+38 |         match self \{\
+   |                      ^
+
+error: unknown start of token: \
+  --> src/main.rs:39:88
+   |
+39 |             Self::EncryptionFailed => write!(f, "ChaCha20-Poly1305 encryption failed"),\
+   |                                                                                        ^
+
+error: unknown start of token: \
+  --> src/main.rs:40:55
+   |
+40 |             Self::DecryptionOrAuthenticationFailed => \{\
+   |                                                       ^
+
+error: unknown start of token: \
+  --> src/main.rs:40:57
+   |
+40 |             Self::DecryptionOrAuthenticationFailed => \{\
+   |                                                         ^
+
+error: unknown start of token: \
+  --> src/main.rs:41:83
+   |
+41 |                 write!(f, "decryption failed or ciphertext authentication failed")\
+   |                                                                                   ^
+
+error: unknown start of token: \
+  --> src/main.rs:42:13
+   |
+42 |             \}\
+   |             ^
+
+error: unknown start of token: \
+  --> src/main.rs:42:15
+   |
+42 |             \}\
+   |               ^
+
+error: unknown start of token: \
+  --> src/main.rs:43:89
+   |
+43 |             Self::InvalidUtf8(_) => write!(f, "decrypted plaintext is not valid UTF-8"),\
+   |                                                                                         ^
+
+error: unknown start of token: \
+  --> src/main.rs:44:9
+   |
+44 |         \}\
+   |         ^
+
+error: unknown start of token: \
+  --> src/main.rs:44:11
+   |
+44 |         \}\
+   |           ^
+
+error: unknown start of token: \
+  --> src/main.rs:45:5
+   |
+45 |     \}\
+   |     ^
+
+error: unknown start of token: \
+  --> src/main.rs:45:7
+   |
+45 |     \}\
+   |       ^
+
+error: unknown start of token: \
+  --> src/main.rs:46:1
+   |
+46 | \}\
+   | ^
+
+error: unknown start of token: \
+  --> src/main.rs:46:3
+   |
+46 | \}\
+   |   ^
+
+error: unknown start of token: \
+  --> src/main.rs:47:1
+   |
+47 | \
+   | ^
+
+error: unknown start of token: \
+  --> src/main.rs:48:28
+   |
+48 | impl Error for CryptoError \{\
+   |                            ^
+
+error: unknown start of token: \
+  --> src/main.rs:48:30
+   |
+48 | impl Error for CryptoError \{\
+   |                              ^
+
+error: unknown start of token: \
+  --> src/main.rs:49:56
+   |
+49 |     fn source(&self) -> Option<&(dyn Error + 'static)> \{\
+   |                                                        ^
+
+error: unknown start of token: \
+  --> src/main.rs:49:58
+   |
+49 |     fn source(&self) -> Option<&(dyn Error + 'static)> \{\
+   |                                                          ^
+
+error: unknown start of token: \
+  --> src/main.rs:50:20
+   |
+50 |         match self \{\
+   |                    ^
+
+error: unknown start of token: \
+  --> src/main.rs:50:22
+   |
+50 |         match self \{\
+   |                      ^
+
+error: unknown start of token: \
+  --> src/main.rs:51:53
+   |
+51 |             Self::InvalidUtf8(error) => Some(error),\
+   |                                                     ^
+
+error: unknown start of token: \
+  --> src/main.rs:52:23
+   |
+52 |             _ => None,\
+   |                       ^
+
+error: unknown start of token: \
+  --> src/main.rs:53:9
+   |
+53 |         \}\
+   |         ^
+
+error: unknown start of token: \
+  --> src/main.rs:53:11
+   |
+53 |         \}\
+   |           ^
+
+error: unknown start of token: \
+  --> src/main.rs:54:5
+   |
+54 |     \}\
+   |     ^
+
+error: unknown start of token: \
+  --> src/main.rs:54:7
+   |
+54 |     \}\
+   |       ^
+
+error: unknown start of token: \
+  --> src/main.rs:55:1
+   |
+55 | \}\
+   | ^
+
+error: unknown start of token: \
+  --> src/main.rs:55:3
+   |
+55 | \}\
+   |   ^
+
+error: unknown start of token: \
+  --> src/main.rs:56:1
+   |
+56 | \
+   | ^
+
+error: unknown start of token: \
+  --> src/main.rs:57:55
+   |
+57 | impl From<std::string::FromUtf8Error> for CryptoError \{\
+   |                                                       ^
+
+error: unknown start of token: \
+  --> src/main.rs:57:57
+   |
+57 | impl From<std::string::FromUtf8Error> for CryptoError \{\
+   |                                                         ^
+
+error: unknown start of token: \
+  --> src/main.rs:58:56
+   |
+58 |     fn from(error: std::string::FromUtf8Error) -> Self \{\
+   |                                                        ^
+
+error: unknown start of token: \
+  --> src/main.rs:58:58
+   |
+58 |     fn from(error: std::string::FromUtf8Error) -> Self \{\
+   |                                                          ^
+
+error: unknown start of token: \
+  --> src/main.rs:59:33
+   |
+59 |         Self::InvalidUtf8(error)\
+   |                                 ^
+
+error: unknown start of token: \
+  --> src/main.rs:60:5
+   |
+60 |     \}\
+   |     ^
+
+error: unknown start of token: \
+  --> src/main.rs:60:7
+   |
+60 |     \}\
+   |       ^
+
+error: unknown start of token: \
+  --> src/main.rs:61:1
+   |
+61 | \}\
+   | ^
+
+error: unknown start of token: \
+  --> src/main.rs:61:3
+   |
+61 | \}\
+   |   ^
+
+error: unknown start of token: \
+  --> src/main.rs:62:1
+   |
+62 | \
+   | ^
+
+error: unknown start of token: \
+  --> src/main.rs:63:25
+   |
+63 | struct EncryptedMessage \{\
+   |                         ^
+
+error: unknown start of token: \
+  --> src/main.rs:63:27
+   |
+63 | struct EncryptedMessage \{\
+   |                           ^
+
+error: unknown start of token: \
+  --> src/main.rs:65:18
+   |
+65 |     nonce: Nonce,\
+   |                  ^
+
+error: unknown start of token: \
+  --> src/main.rs:66:25
+   |
+66 |     ciphertext: Vec<u8>,\
+   |                         ^
+
+error: unknown start of token: \
+  --> src/main.rs:67:1
+   |
+67 | \}\
+   | ^
+
+error: unknown start of token: \
+  --> src/main.rs:67:3
+   |
+67 | \}\
+   |   ^
+
+error: unknown start of token: \
+  --> src/main.rs:68:1
+   |
+68 | \
+   | ^
+
+error: unknown start of token: \
+  --> src/main.rs:69:20
+   |
+69 | fn encrypt_message(\
+   |                    ^
+
+error: unknown start of token: \
+  --> src/main.rs:70:31
+   |
+70 |     cipher: &ChaCha20Poly1305,\
+   |                               ^
+
+error: unknown start of token: \
+  --> src/main.rs:71:22
+   |
+71 |     plaintext: &[u8],\
+   |                      ^
+
+error: unknown start of token: \
+  --> src/main.rs:72:44
+   |
+72 | ) -> Result<EncryptedMessage, CryptoError> \{\
+   |                                            ^
+
+error: unknown start of token: \
+  --> src/main.rs:72:46
+   |
+72 | ) -> Result<EncryptedMessage, CryptoError> \{\
+   |                                              ^
+
+error: unknown start of token: \
+  --> src/main.rs:74:62
+   |
+74 |     let nonce = ChaCha20Poly1305::generate_nonce(&mut OsRng);\
+   |                                                              ^
+
+error: unknown start of token: \
+  --> src/main.rs:75:1
+   |
+75 | \
+   | ^
+
+error: unknown start of token: \
+  --> src/main.rs:76:28
+   |
+76 |     let ciphertext = cipher\
+   |                            ^
+
+error: unknown start of token: \
+  --> src/main.rs:77:36
+   |
+77 |         .encrypt(&nonce, plaintext)\
+   |                                    ^
+
+error: unknown start of token: \
+  --> src/main.rs:78:54
+   |
+78 |         .map_err(|_| CryptoError::EncryptionFailed)?;\
+   |                                                      ^
+
+error: unknown start of token: \
+  --> src/main.rs:79:1
+   |
+79 | \
+   | ^
+
+error: unknown start of token: \
+  --> src/main.rs:80:25
+   |
+80 |     Ok(EncryptedMessage \{ nonce, ciphertext \})\
+   |                         ^
+
+error: unknown start of token: \
+  --> src/main.rs:80:46
+   |
+80 |     Ok(EncryptedMessage \{ nonce, ciphertext \})\
+   |                                              ^
+
+error: unknown start of token: \
+  --> src/main.rs:80:49
+   |
+80 |     Ok(EncryptedMessage \{ nonce, ciphertext \})\
+   |                                                 ^
+
+error: unknown start of token: \
+  --> src/main.rs:81:1
+   |
+81 | \}\
+   | ^
+
+error: unknown start of token: \
+  --> src/main.rs:81:3
+   |
+81 | \}\
+   |   ^
+
+error: unknown start of token: \
+  --> src/main.rs:82:1
+   |
+82 | \
+   | ^
+
+error: unknown start of token: \
+  --> src/main.rs:83:20
+   |
+83 | fn decrypt_message(\
+   |                    ^
+
+error: unknown start of token: \
+  --> src/main.rs:84:31
+   |
+84 |     cipher: &ChaCha20Poly1305,\
+   |                               ^
+
+error: unknown start of token: \
+  --> src/main.rs:85:34
+   |
+85 |     encrypted: &EncryptedMessage,\
+   |                                  ^
+
+error: unknown start of token: \
+  --> src/main.rs:86:35
+   |
+86 | ) -> Result<Vec<u8>, CryptoError> \{\
+   |                                   ^
+
+error: unknown start of token: \
+  --> src/main.rs:86:37
+   |
+86 | ) -> Result<Vec<u8>, CryptoError> \{\
+   |                                     ^
+
+error: unknown start of token: \
+  --> src/main.rs:87:11
+   |
+87 |     cipher\
+   |           ^
+
+error: unknown start of token: \
+  --> src/main.rs:88:66
+   |
+88 |         .decrypt(&encrypted.nonce, encrypted.ciphertext.as_ref())\
+   |                                                                  ^
+
+error: unknown start of token: \
+  --> src/main.rs:89:68
+   |
+89 |         .map_err(|_| CryptoError::DecryptionOrAuthenticationFailed)\
+   |                                                                    ^
+
+error: unknown start of token: \
+  --> src/main.rs:90:1
+   |
+90 | \}\
+   | ^
+
+error: unknown start of token: \
+  --> src/main.rs:90:3
+   |
+90 | \}\
+   |   ^
+
+error: unknown start of token: \
+  --> src/main.rs:91:1
+   |
+91 | \
+   | ^
+
+error: unknown start of token: \
+  --> src/main.rs:92:41
+   |
+92 | fn main() -> Result<(), Box<dyn Error>> \{\
+   |                                         ^
+
+error: unknown start of token: \
+  --> src/main.rs:92:43
+   |
+92 | fn main() -> Result<(), Box<dyn Error>> \{\
+   |                                           ^
+
+error: unknown start of token: \
+  --> src/main.rs:94:58
+   |
+94 |     let key = ChaCha20Poly1305::generate_key(&mut OsRng);\
+   |                                                          ^
+
+error: unknown start of token: \
+  --> src/main.rs:95:46
+   |
+95 |     let cipher = ChaCha20Poly1305::new(&key);\
+   |                                              ^
+
+error: unknown start of token: \
+  --> src/main.rs:96:1
+   |
+96 | \
+   | ^
+
+error: unknown start of token: \
+  --> src/main.rs:97:77
+   |
+97 |     let plaintext = b"Confidential message protected by ChaCha20-Poly1305.";\
+   |                                                                             ^
+
+error: unknown start of token: \
+  --> src/main.rs:98:1
+   |
+98 | \
+   | ^
+
+error: unknown start of token: \
+  --> src/main.rs:99:58
+   |
+99 |     let encrypted = encrypt_message(&cipher, plaintext)?;\
+   |                                                          ^
+
+error: unknown start of token: \
+   --> src/main.rs:100:39
+    |
+100 |     println!("Encryption succeeded.");\
+    |                                       ^
+
+error: unknown start of token: \
+   --> src/main.rs:101:1
+    |
+101 | \
+    | ^
+
+error: unknown start of token: \
+   --> src/main.rs:102:59
+    |
+102 |     let decrypted = decrypt_message(&cipher, &encrypted)?;\
+    |                                                           ^
+
+error: unknown start of token: \
+   --> src/main.rs:103:56
+    |
+103 |     let decrypted_text = String::from_utf8(decrypted)?;\
+    |                                                        ^
+
+error: unknown start of token: \
+   --> src/main.rs:104:1
+    |
+104 | \
+    | ^
+
+error: unknown character escape: `{`
+   --> src/main.rs:105:38
+    |
+105 |     println!("Decryption succeeded: \{decrypted_text\}");\
+    |                                      ^ unknown character escape
+    |
+    = help: if used in a formatting string, curly braces are escaped with `{{` and `}}`
+
+error: unknown character escape: `}`
+   --> src/main.rs:105:54
+    |
+105 |     println!("Decryption succeeded: \{decrypted_text\}");\
+    |                                                      ^ unknown character escape
+    |
+    = help: if used in a formatting string, curly braces are escaped with `{{` and `}}`
+
+error: unknown start of token: \
+   --> src/main.rs:105:58
+    |
+105 |     println!("Decryption succeeded: \{decrypted_text\}");\
+    |                                                          ^
+
+error: unknown start of token: \
+   --> src/main.rs:106:1
+    |
+106 | \
+    | ^
+
+error: unknown start of token: \
+   --> src/main.rs:107:11
+    |
+107 |     Ok(())\
+    |           ^
+
+error: unknown start of token: \
+   --> src/main.rs:108:1
+    |
+108 | \}}
+    | ^
+
+error: expected item, found `{`
+ --> src/main.rs:1:1
+  |
+1 | {\rtf1\ansi\ansicpg1252\cocoartf2870
+  | ^ expected item
+  |
+  = note: for a full list of items that can appear in modules, see <https://doc.rust-lang.org/reference/items.html>
+
+error: could not compile `gpt5_chacha_zero_1` (bin "gpt5_chacha_zero_1") due to 161 previous errors

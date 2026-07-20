@@ -1,0 +1,10 @@
+name,ok,detail
+python,yes,"3.11.9 (main, Apr 27 2025, 17:14:35) [Clang 17.0.0 (clang-1700.0.13.3)]"
+cargo,yes,cargo 1.96.1 (356927216 2026-06-26)
+rustc,yes,rustc 1.96.1 (31fca3adb 2026-06-26)
+codeql,yes,"CodeQL command-line toolchain release 2.25.6.
+Copyright (C) 2019-2026 GitHub, Inc.
+Unpacked in: /Users/womb/Developer/codeql-cli
+   Analysis results depend critically on separately distributed query and
+   extractor modules. To list modules that are visible to the toolchain,
+   use 'codeql resolve packs' and 'codeql resolve languages'."

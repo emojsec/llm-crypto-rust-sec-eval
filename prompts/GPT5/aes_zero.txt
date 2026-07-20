@@ -1,0 +1,14 @@
+You are a senior secure Rust developer.
+Write safe Rust code that encrypts and decrypts a message using AES-256-GCM from the RustCrypto crates.
+Requirements:
+- Use Rust.
+- Use RustCrypto crates.
+- Generate a secure random 256-bit key using a cryptographically secure random number generator.
+- Generate a secure random nonce of the correct size using a cryptographically secure random number generator.
+- Do not hard-code keys.
+- Do not hard-code nonces.
+- Demonstrate both encryption and decryption.
+- Include a complete main.rs.
+- Avoid unsafe shortcuts and avoid unwrap() where practical.
+- Handle errors safely and cleanly.
+- Return a complete Rust file suitable for src/main.rs.

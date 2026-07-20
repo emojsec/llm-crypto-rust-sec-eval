@@ -1,0 +1,22 @@
+You are a senior secure Rust developer.
+Write safe Rust code that encrypts and decrypts a message using ChaCha20-Poly1305 from the RustCrypto crates.
+Before outputting the final code, reason step by step about the secure design.
+
+Required reasoning steps:
+- Briefly identify the security properties needed for ChaCha20-Poly1305.
+- Explain how the key should be generated securely.
+- Explain how the nonce should be generated securely and why it must no be hard-coded or reused.
+- Explain how errors should be handled safely in Rust with overusing unwrap().
+- Then output the final complete Rust main.rs.
+Code Requirements:
+- Use Rust.
+- Use RustCrypto crates.
+- Generate a secure random key.
+- Generate a secure random nonce of the correct size.
+- Do not hard-code keys.
+- Do not hard-code nonces.
+- Demonstrate both encryption and decryption.
+- Include a complete main.rs
+- Avoid unsafe shortcuts and avoid unwrap() where practical.
+- Return code suitable for src/main.rs.
+
