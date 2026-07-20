@@ -1,0 +1,5 @@
+sample_id,llm,algorithm,prompt_style,as_generated_compiles,repaired_compiles,initial_compile_category,repaired_compile_category,codeql_attempted,manual_review_completed
+CodeLlama,CodeLlama,AES-256-GCM / ChaCha20-Poly1305,zero-shot + few-shot + chain-of-thought,no,no,missing_project_structure,type_mismatch,no (not run; repaired sample did not compile),yes (heuristic triage only)
+CodeLlama_reasoning,CodeLlama,AES-256-GCM / ChaCha20-Poly1305,reasoning variant,no,no,missing_project_structure,missing_project_structure,no (not run; repaired sample did not compile),no (no Rust source found)
+GPT5,GPT5,AES-256-GCM,zero-shot + few-shot + chain-of-thought,no,no,missing_project_structure,invalid_source_format (RTF in src/main.rs),no (not run; repaired sample did not compile),yes (heuristic triage only; no findings)
+GPT5_reasoning,GPT5,AES-256-GCM,reasoning variant,no,no,missing_project_structure,missing_project_structure,no (not run; repaired sample did not compile),no (no Rust source found)
